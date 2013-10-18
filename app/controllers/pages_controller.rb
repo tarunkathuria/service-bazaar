@@ -2,6 +2,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def login
+  def home
   end
 end

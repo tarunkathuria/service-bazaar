@@ -1,14 +1,14 @@
 ServiceBazaar::Application.routes.draw do
   get "pages/contact"
-  get "pages/login"
-  post "pages/login"
+  get "pages/home"
+  post "pages/home"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'pages#login', via: [:get,:post]
-   match "/login", to: "pages#login", via: [:get, :post]
+   root 'pages#home', via: [:get,:post]
+   match "/home", to: "pages#home", via: [:get, :post]
    match "/contact", to: "pages#contact", via: [:get]
 
   # Example of regular route:
