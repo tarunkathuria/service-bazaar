@@ -1,0 +1,3938 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 01:59:39 +0530
+
+Mysql2::Error (Unknown database 'servicebazaar_development'):
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4605462763133642925__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 01:59:39 +0530
+
+Mysql2::Error (Unknown database 'servicebazaar_development'):
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4605462763133642925__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.6ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:01:17 +0530
+
+Mysql2::Error (Unknown database 'service-bazaar'):
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2961142595837283544__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:02:45 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (15.3ms)
+Completed 200 OK in 38ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 566ms (Views: 550.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:14:39 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2013-10-14 02:14:45 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-14 02:14:51 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:14:59 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?username=Tarun&password=[FILTERED]&Login=Submit" for 127.0.0.1 at 2013-10-14 02:15:07 +0530
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"Tarun", "password"=>"[FILTERED]", "Login"=>"Submit"}
+  Rendered pages/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?username=Tarun&password=[FILTERED]&Login=Submit" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"Tarun", "password"=>"[FILTERED]", "Login"=>"Submit"}
+  Rendered pages/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:17:20 +0530
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:17:25 +0530
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.4ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:18:09 +0530
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:18:11 +0530
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:18:16 +0530
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 60ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 02:19:06 +0530
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:19:10 +0530
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:19:58 +0530
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"wefc", "password"=>"[FILTERED]", "Login"=>"Submit"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 16ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:377:in `_run__526693191844289763__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1415632332156280888__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-14 02:20:08 +0530
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"dv", "password"=>"[FILTERED]", "Login"=>"Submit"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:377:in `_run__526693191844289763__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1415632332156280888__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 88ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-16 00:35:36 +0530
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-16 00:35:43 +0530
+Processing by PagesController#login as HTML
+  Parameters: {"username"=>"tarun", "password"=>"[FILTERED]", "Login"=>"Submit Query"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.0) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:377:in `_run__3865191945013678308__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__337046249298398478__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 19:47:06 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 19:47:07 +0530
+
+
+Started GET "/home" for 127.0.0.1 at 2013-10-18 19:47:20 +0530
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tarunkathuria/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:05 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 19:59:30 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 19:59:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:14:36 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:14:46 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:19:48 +0530
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:19:51 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:20:02 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:20:27 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:21:58 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 78ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:21:59 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:07 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:39 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:48 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:52 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:22:58 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:23:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 81ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:23:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:24:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:24:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:25:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:26:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:00 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:42 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:27:50 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:27:51 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:27:55 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:27:56 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:27:59 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:28:05 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:28:08 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:28:11 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:08 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:10 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:11 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:12 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:12 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:12 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:13 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:16 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:16 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:16 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:16 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:37 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:38 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:41 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:29:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:29:45 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 20:41:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 20:41:05 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:25:51 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:25:52 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:25:54 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:26:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:16 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:26 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:27 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:30:29 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:31:09 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:10 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 22:31:41 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:41:59 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/images
+  /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/javascripts
+  /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets
+  /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/vendor/assets/javascripts
+  /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/vendor/assets/stylesheets
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/twitter-bootstrap-rails-2.2.8/app/assets/fonts
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/twitter-bootstrap-rails-2.2.8/app/assets/images
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/twitter-bootstrap-rails-2.2.8/app/assets/javascripts
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/twitter-bootstrap-rails-2.2.8/app/assets/stylesheets
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/twitter-bootstrap-rails-2.2.8/vendor/assets/stylesheets
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/turbolinks-1.3.0/lib/assets/javascripts
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/jquery-rails-3.0.4/vendor/assets/javascripts
+  /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/coffee-rails-4.0.0/lib/assets/javascripts
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/boots.css.scss:1)):
+    2: <html>
+    3: <head>
+    4:   <title>ServiceBazaar</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/boots.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3823939844258767013_70241327386740'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 22:43:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (couldn't find file 'bootstrap'
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/javascripts/application.js:16)):
+    3: <head>
+    4:   <title>ServiceBazaar</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__498902370838631730_70171285882500'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:04:43 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error ('twitter/bootstrap/bootstrap.less' wasn't found
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    12:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    13:     <![endif]-->
+    14: 
+    15:     <%= stylesheet_link_tag "application", :media => "all" %>
+    16: 
+    17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    18:     <!-- Size should be 144 x 144 pixels -->
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___3340676061478700764_70286437564200'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:06:44 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (cannot load such file -- less
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    2: <html>
+    3: <head>
+    4:   <title>ServiceBazaar</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1057102668853910929_70112598508500'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:11:49 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (cannot load such file -- less
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    2: <html>
+    3: <head>
+    4:   <title>ServiceBazaar</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3821947385840691739_70290259461620'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-10-18 23:35:08 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (7.4ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0x007f9f554fee70>:0x007f9f53aa4980>):
+    2: 	<div class="navbar-header">
+    3: 		<ul class="nav navbar-nav">
+    4: 			<li> <a href="/">Service Bazaar</a> </li>
+    5: 			<% if logged_in? %>
+    6: 				<li class="dropdown">
+    7: 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Username <b class="caret"></b></a>
+    8: 			        <ul class="dropdown-menu">
+  app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb__4379022841790012531_70161151759120'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1603505630548198490_70161154273980'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:35:12 +0530
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0x007f9f554fee70>:0x007f9f55167028>):
+    2: 	<div class="navbar-header">
+    3: 		<ul class="nav navbar-nav">
+    4: 			<li> <a href="/">Service Bazaar</a> </li>
+    5: 			<% if logged_in? %>
+    6: 				<li class="dropdown">
+    7: 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Username <b class="caret"></b></a>
+    8: 			        <ul class="dropdown-menu">
+  app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb__4379022841790012531_70161151759120'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1603505630548198490_70161154273980'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:40:08 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (21.9ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0x007fa11ad65e58>:0x007fa11ad9c868>):
+    2: 	<div class="navbar-header">
+    3: 		<ul class="nav navbar-nav">
+    4: 			<li> <a href="/">Service Bazaar</a> </li>
+    5: 			<% if logged_in? %>
+    6: 				<li class="dropdown">
+    7: 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Username <b class="caret"></b></a>
+    8: 			        <ul class="dropdown-menu">
+  app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb__2035214813115468840_70164956485900'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___4496003889522609185_70164944358400'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:43:32 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:43:35 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:44:09 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:44:44 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:48 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:46:51 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:46:55 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:46:58 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:47:50 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:51:34 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:53:09 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:53:10 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:54:07 +0530
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-18 23:54:17 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:54:19 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:59:17 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:59:22 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:59:53 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-18 23:59:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:59:56 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-18 23:59:58 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:00:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:00:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-19 00:00:01 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:00:03 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:01:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:08:14 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:15 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:08:20 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:08:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:29 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:08:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:22:47 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `ascript_include_tag' for #<#<Class:0x007fcb634f5340>:0x007fcb634fa5e8>):
+    3: 	<head>
+    4: 		<title>ServiceBazaar</title>
+    5: 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6: 		<%= jav	ascript_include_tag "application", "data-turbolinks-track" => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+    9: 	<body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4520806403834186743_70255760804580'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:22:49 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `ascript_include_tag' for #<#<Class:0x007fcb634f5340>:0x007fcb658cb440>):
+    3: 	<head>
+    4: 		<title>ServiceBazaar</title>
+    5: 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6: 		<%= jav	ascript_include_tag "application", "data-turbolinks-track" => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+    9: 	<body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4520806403834186743_70255760804580'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:23:20 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:23:24 +0530
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-10-19 00:23:27 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:24:00 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:24:02 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:43:42 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 729ms (Views: 712.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:43:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 102ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:49:28 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:29 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:49:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:51:05 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/application.css:13)):
+    2: <html>
+    3: 	<head>
+    4: 		<title>ServiceBazaar</title>
+    5: 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6: 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2416839233155526417_70157821176540'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:52:45 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/application.css:13)):
+    2: <html>
+    3: 	<head>
+    4: 		<title>ServiceBazaar</title>
+    5: 		<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    6: 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3585039960035298721_70146335898880'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:57:25 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)
+  (in /Users/tarunkathuria/Desktop/Ruby/ServiceBazaar/app/assets/stylesheets/application.css:13)):
+    2: <html>
+    3: 	<head>
+    4: 		<title>ServiceBazaar</title>
+    5: 		<%= stylesheet_link_tag "application", media: "all"%>
+    6: 		<%= javascript_include_tag "application" %>
+    7: 		<%= csrf_meta_tags %>
+    8: 	</head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___453177234251792613_70093204903360'
+
+
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tarunkathuria/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 134.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 00:58:07 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 01:12:45 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 143ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 01:12:46 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-19 01:13:27 +0530
