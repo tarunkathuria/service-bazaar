@@ -5,12 +5,64 @@
   <br><input type="submit" name="Login"/>
 </form>
 -->
-<table width=100% border="0">
-<tr>
-<td>fdvf</td>
-<td>fvv</td>
-</tr>
-<tr>
-<td>go</td>
-<td>h</td>
+<table width=85% border="0" style="table-layout:fixed">
+<col width="120%" />
+<col width="80%" />
+<td> </td>
+<td><ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#tablogin">Login</a></li>
+    <li><a data-toggle="tab" href="#tabsignup">Signup</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="tablogin">
+        <div class="container">
+    	  <form class="form-signin">
+    	  	  <br><br><br>
+	    	  <input type="text" class="form-control" placeholder="Username" autofocus><br>
+	    	  <input type="password" class="form-control" placeholder="Password">
+	    	  <label class="checkbox">
+		    	  <input type="checkbox" value="remember-me"> Remember me
+		    	  </label>
+		    	  <a href="#"> Forgot Password? </a>
+		    	  <br><br>
+		    	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		  </form>
+    </div>
+    </div>
+    <div class="tab-pane" id="tabsignup">
+        <div class="container">
+    	  <form class="form-signin">
+    	  	  <br><br><br>
+    	  	  <input type="text" class="form-control" placeholder="Real Name" ><br>
+    	  	  <input type="text" class="form-control" placeholder="Date of Birth(mm/dd/yyyy)" ><br>
+    	  	  <input type="text" data-behaviour='datepicker' >
+    	  	  
+    	  	  <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+  <input class="span2" size="16" type="text" value="12-02-2012">
+  <span class="add-on"><i class="icon-th"></i></span>
+</div>
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  
+    	  	  <input type="text" class="form-control" placeholder="e-mail ID" ><br>
+	    	  <input type="text" class="form-control" placeholder="Username"><br>
+	    	  <input type="password" class="form-control" placeholder="Password"><br>
+	    	  <p>Location</p>
+	    	  <label>Preferred Role</label> &ensp; &ensp;<input type="radio" id="one" name="first_item" value="1" />
+<label for="one">First Item</label>
+            &ensp;&ensp;
+            <input type="radio" id="two" name="first_item" value="2" />  <label for="two">Second Item</label>
+            
+             <p></p>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+		  </form>
+		</div>
+    </div>
+</div>
+</td>
+
+
 </table>

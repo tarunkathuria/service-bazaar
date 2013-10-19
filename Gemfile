@@ -45,3 +45,8 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'less-rails-bootstrap'
+
+gem 'bootstrap-sass'
+
+#Use bootstrap-datepicker-rails
+gem 'bootstrap-datepicker-rails'
