@@ -24,10 +24,10 @@
         <div class="container">
     	  <form class="form-signin">
     	  	  <br><br><br>
-	    	  <input type="text" class="form-control" placeholder="Username" autofocus><br>
-	    	  <input type="password" class="form-control" placeholder="Password">
+	    	  <input type="text" name="usernameLogin" class="form-control" placeholder="Username" autofocus><br>
+	    	  <input type="password" name="passwordLogin" class="form-control" placeholder="Password">
 	    	  <label class="checkbox">
-		    	  <input type="checkbox" value="remember-me"> Remember me
+		    	  <input type="checkbox" name="rememberme" value="remember-me"> Remember me
 		    	  </label>
 		    	  <a href="#"> Forgot Password? </a>
 		    	  <br><br>
@@ -39,18 +39,26 @@
         <div class="container">
     	  <form class="form-signin">
     	  	  <br><br><br>
-    	  	  <input type="text" class="form-control" placeholder="Real Name" ><br>
-    	  	  <input type="text" class="form-control" placeholder="Date of Birth(mm/dd/yyyy)" ><br>
-    	  	  <input type="text" class="form-control" placeholder="e-mail ID" ><br>
-	    	  <input type="text" class="form-control" placeholder="Username"><br>
-	    	  <input type="password" class="form-control" placeholder="Password"><br>
+    	  	  <input type="text" class="form-control" name="realNameSignup" placeholder="Real Name" size="20"><br>
+    	  	   <input type="text" value="" class="datepicker" name="DOBSignup" placeholder="Date of Birth">
+
+            <script>
+	            $('.datepicker').datepicker({
+		            format: 'mm-dd-yyyy'
+		            });
+		    </script>
+		    <br><br>
+    	  	  <input type="text" class="form-control" name="emailSignup" placeholder="e-mail ID" ><br>
+	    	  <input type="text" class="form-control" name="usernameSignup" placeholder="Username"><br>
+	    	  <input type="password" class="form-control" name="passwordSignup" placeholder="Password"><br>
 	    	  <p>Location</p>
+	    	  
 	    	 <!-- <label>Preferred Role</label> &ensp; &ensp;<input type="radio" id="one" name="first_item" value="1" />
 	    	  <label for="one">Buyer</label>
               &ensp;&ensp;
               <input type="radio" id="two" name="first_item" value="2" />  <label for="two">Seller</label>
             -->
-            
+           
              <p></p>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
 		  </form>
