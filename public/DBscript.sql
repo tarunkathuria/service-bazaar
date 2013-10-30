@@ -127,12 +127,14 @@ create table OfferedService(
 );
 
 create table Requests(
-	serviceID integer primary key references RequestedService(serviceID),
-	buyerName varchar(30) references Buyer(username)
+	buyerName varchar(30) references Buyer(username),
+	serviceID integer references RequestedService(serviceID),
+	primary key(serviceID,buyerName)
+	
 );
 
 create table Offers(
-	serviceID integer references OfferedService(serviceID),
 	vendorName varchar(30) references Vendor(username),
+	serviceID integer references OfferedService(serviceID),
 	primary key(serviceID, vendorName)
 );
