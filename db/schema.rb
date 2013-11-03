@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131102174916) do
+ActiveRecord::Schema.define(version: 20131103151359) do
 
   create_table "Appointment", id: false, force: true do |t|
     t.string  "buyerName",   limit: 30, default: "", null: false
@@ -111,20 +111,6 @@ ActiveRecord::Schema.define(version: 20131102174916) do
     t.integer "visibility"
   end
 
-  create_table "Users", id: false, force: true do |t|
-    t.string   "username",    null: false
-    t.float    "latitude",    null: false
-    t.float    "longitude",   null: false
-    t.string   "realName"
-    t.date     "dateOfBirth"
-    t.string   "emailID",     null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "users", ["emailID"], name: "index_Users_on_emailID", unique: true, using: :btree
-  add_index "users", ["username"], name: "index_Users_on_username", unique: true, using: :btree
-
   create_table "Vendor", primary_key: "username", force: true do |t|
     t.string "password",          limit: 20
     t.float  "latitudeLocation"
@@ -134,5 +120,20 @@ ActiveRecord::Schema.define(version: 20131102174916) do
     t.string "emailID",           limit: 40
     t.float  "rating"
   end
+
+  create_table "users", id: false, force: true do |t|
+    t.string   "username",    null: false
+    t.float    "latitude",    null: false
+    t.float    "longitude",   null: false
+    t.string   "realName"
+    t.date     "dateOfBirth"
+    t.string   "emailID",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password"
+  end
+
+  add_index "users", ["emailID"], name: "index_Users_on_emailID", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_Users_on_username", unique: true, using: :btree
 
 end
