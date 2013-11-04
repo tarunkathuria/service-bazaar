@@ -1,16 +1,23 @@
 ServiceBazaar::Application.routes.draw do
+  get "sessions/new"
   get "pages/contact"
   get "pages/home"
   post "pages/home"
+
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+
+  match '/signin', :to => 'sessions#new', :via => 'get'
+  match '/signout', :to => 'sessions#destroy', :via => 'delete'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'pages#home', via: [:get,:post]
-   match "/home", to: "pages#home", via: [:get, :post]
-   match "/contact", to: "pages#contact", via: [:get]
-   match "/usersignup", to: "users#create", via: [:post]
+  root 'pages#home', via: [:get,:post]
+  match "/home", to: "pages#home", via: [:get, :post]
+  match "/contact", to: "pages#contact", via: [:get]
+  match "/usersignup", to: "users#create", via: [:post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

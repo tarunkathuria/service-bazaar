@@ -1,6 +1,6 @@
 class CreateUsers < ActiveRecord::Migration
     def self.up
-    create_table :Users, :id => false do |t|
+    create_table :users, :id => false do |t|
     t.string :username, :null => false
     t.float :latitude, :null =>false
     t.float :longitude, :null => false
@@ -10,8 +10,8 @@ class CreateUsers < ActiveRecord::Migration
     
     t.timestamps
 end
-add_index :Users, :username, :unique=> true
-add_index :Users, :emailID, :unique => true
+add_index :users, :username, :unique=> true
+add_index :users, :emailID, :unique => true
 
 #add constraints via SQL using execute
 
@@ -30,6 +30,6 @@ add_index :Users, :emailID, :unique => true
 
 end
 def self.down
-drop_table :Users
+drop_table :users
 end
 end

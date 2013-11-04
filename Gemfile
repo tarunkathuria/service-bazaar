@@ -50,3 +50,7 @@ gem 'bootstrap-sass'
 
 #Use bootstrap-datepicker-rails
 gem 'bootstrap-datepicker-rails'
+
+group :development do
+  gem 'better_errors'
+end
