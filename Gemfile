@@ -44,6 +44,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# gem 'twitter-bootstrap-rails'
 gem 'less-rails-bootstrap'
 
 gem 'bootstrap-sass'
@@ -54,3 +55,5 @@ gem 'bootstrap-datepicker-rails'
 group :development do
   gem 'better_errors'
 end
+
+gem 'simple_form'

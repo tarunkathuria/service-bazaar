@@ -15,13 +15,20 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(user_params)
+    # @user = User.find(user_params)
+    @user = User.find_by(params[:username])
+    @successfulSignin = true
+  end
+
+  def index
+    
   end
   
   private
 
   def user_params
-    params.require(:user).permit(:username, :emailID, :password, :latitude, :longitude, :dateOfBirth, :realName)
+    params.permit(:user).permit(:username, :emailID, :password, :latitude, :longitude, :dateOfBirth, :realName)
+    # params.permit(:session).permit(:username, :password)
   end
 
 end

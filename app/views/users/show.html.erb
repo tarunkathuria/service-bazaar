@@ -1,3 +1,24 @@
-<h1><%= @user.username %></h1>
+<% if @successfulSignin %>
+  <div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    Welcome, <strong><%= @user.username %></strong>!
+    <% @successfulSignin = false %>
+  </div>
+<% end %>
 
-<p>asdf</p>
+<h1>Dashboard</h1>
+
+<ul class="nav nav-tabs " data-tabs="tabs">
+	<li class="active"><a data-toggle="tab" href="#tabBuyer">Buyer</a></li>
+	<li><a data-toggle="tab" href="#tabVendor">Vendor</a></li>
+</ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tabBuyer">
+     	<div class="container">
+	    </div>
+    </div>
+    <div class="tab-pane" id="tabVendor">
+        <div class="container">
+		</div>
+    </div>
+</div>

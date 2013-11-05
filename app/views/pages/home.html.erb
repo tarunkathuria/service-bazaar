@@ -20,6 +20,11 @@
       </div>
     <% end %>
   </div>
+<% elsif @errorSignin %>
+  <div class="alert alert-danger alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Error!</strong> Invalid username/password combination
+  </div>
 <% end %>
 
 <table width=85% border="0" style="table-layout:fixed" >
@@ -37,37 +42,37 @@
   <div class="tab-content">
     <div class="tab-pane active" id="tablogin">
       <div class="container">
-        <%= form_for(:session, url: sessions_path) do |f| %>
-          <%= f.label :username %>
-          <%= f.text_field :username %>
 
-          <%= f.label :password %>
-          <%= f.password_field :password %>
-
-          <%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
-        <% end %>
+        <form class="form-signin" method="POST" action="/sessions">
+          <br><br><br>
+          <input class="form-control" id="session_username" type="text" name="session[username]" placeholder="Username" size="30"><br>
+          <input class="form-control" id="session_password" type="password" name="session[password]" placeholder="Password">
+          <br>
+          <%= token_tag nil %>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+        </form>
     </div>
     </div>
     <div class="tab-pane" id="tabsignup">
         <div class="container">
-    	  <form class="form-signin" method="POST" action="/usersignup">
-    	  	  <br><br><br>
-    	  	  <input type="text" class="form-control" name="user[realName]" placeholder="Real Name" size="20"><br>
-    	  	   <input type="text" value="" class="datepicker" name="user[dateOfBirth]" placeholder="Date of Birth">
+        <form class="form-signin" method="POST" action="/usersignup">
+            <br><br><br>
+            <input type="text" class="form-control" name="user[realName]" placeholder="Real Name" size="20"><br>
+             <input type="text" value="" class="datepicker" name="user[dateOfBirth]" placeholder="Date of Birth">
 
             <script>
-	            $('.datepicker').datepicker({
-		            format: 'yyyy-mm-dd'
-		            });
-		    </script>
-		    <br><br>
-  	  	<input type="text" class="form-control" name="user[emailID]" placeholder="e-mail ID" ><br>
-    	  <input type="text" class="form-control" name="user[username]" placeholder="Username"><br>
-    	  <input type="password" class="form-control" name="user[password]" placeholder="Password"><br>
-    	  <input type="text" class="form-control" name="user[latitude]" placeholder="Latitude" ><br>
-    	  <input type="text" class="form-control" name="user[longitude]" placeholder="Longitude" ><br>
-	    	 <!-- <label>Preferred Role</label> &ensp; &ensp;<input type="radio" id="one" name="first_item" value="1" />
-	    	  <label for="one">Buyer</label>
+              $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+                });
+        </script>
+        <br><br>
+        <input type="text" class="form-control" name="user[emailID]" placeholder="e-mail ID" ><br>
+        <input type="text" class="form-control" name="user[username]" placeholder="Username"><br>
+        <input type="password" class="form-control" name="user[password]" placeholder="Password"><br>
+        <input type="text" class="form-control" name="user[latitude]" placeholder="Latitude" ><br>
+        <input type="text" class="form-control" name="user[longitude]" placeholder="Longitude" ><br>
+         <!-- <label>Preferred Role</label> &ensp; &ensp;<input type="radio" id="one" name="first_item" value="1" />
+          <label for="one">Buyer</label>
               &ensp;&ensp;
               <input type="radio" id="two" name="first_item" value="2" />  <label for="two">Seller</label>
             -->
