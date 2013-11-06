@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
     user = User.find_by(:username => params[:session][:username].downcase)
     if user && User.authenticate(params[:session][:username], params[:session][:password])
       # sign the user in and redirect to their page
-      params[:username] = user.username
       sign_in(user)
       redirect_to(user)
       # render "pages/contact"
