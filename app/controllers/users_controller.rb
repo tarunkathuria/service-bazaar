@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       @hm = user_params
     end
   end
-
+ 
   def show
     # @user = User.find(user_params)
     # puts "#{params[:username]} 4444444444444444"
@@ -23,11 +23,29 @@ class UsersController < ApplicationController
     @successfulSignin = true
   end
   
+  def forgot_password
+      @user=User.find_by(fp_param)
+      # puts "Forgot Pass user is!!!!!!!!!!!!!!!!!! #{@user.username} #{@user.password}"
+      if @user.nil?
+          @nilUser=true
+          
+      else
+        @nilUser=false
+        puts " !!!!!!!!!!!!! #{@user.username}"
+        UserMailer.forgot_password(@user).deliver
+      end
+      render 'pages/forgot_password'
+  end
+  
   private
 
   def user_params
     params.require(:user).permit(:username, :emailID, :password, :latitude, :longitude, :dateOfBirth, :realName)
     # params.permit(:session).permit(:username, :password)
+  end
+  
+  def fp_param
+      params.require(:user).permit(:username)
   end
 
 end

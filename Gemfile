@@ -39,10 +39,11 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+# gem 'capistrano', group: [:development, :production]
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test, :production]
+
 
 # gem 'twitter-bootstrap-rails'
 gem 'less-rails-bootstrap'
@@ -53,6 +54,10 @@ gem 'bootstrap-sass'
 gem 'bootstrap-datepicker-rails'
 
 group :development do
+  gem 'better_errors'
+end
+
+group :production do
   gem 'better_errors'
 end
 

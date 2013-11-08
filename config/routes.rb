@@ -18,6 +18,8 @@ ServiceBazaar::Application.routes.draw do
   match "/home", to: "pages#home", via: [:get, :post]
   match "/contact", to: "pages#contact", via: [:get]
   match "/usersignup", to: "users#create", via: [:post]
+  match "/forgot_password", to: "pages#forgot_password", via: [:get]
+  match "/forgotPassword", to: "users#forgot_password", via: [:post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

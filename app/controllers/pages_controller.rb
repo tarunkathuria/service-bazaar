@@ -6,4 +6,7 @@ class PagesController < ApplicationController
       @user = User.new
       @title = "Sign up"
   end
+  def forgot_password
+      @user = User.new
+  end
 end

@@ -1,12 +1,14 @@
 <% if @successfulSignin %>
-  <div class="alert alert-success alert-dismissable">
+ <!-- <div class="alert alert-success alert-dismissable">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    Welcome, <strong><%= @user.username %></strong>!
+    Welcome, <strong><%= @user.username %></strong>! -->
     <% @successfulSignin = false %>
   </div>
 <% end %>
-
-<h1>Dashboard</h1>
+<div class="page-header">
+  <h1>Dashboard <small></small></h1>
+</div>
+<br>
 
 <ul class="nav nav-tabs " data-tabs="tabs">
 	<li class="active"><a data-toggle="tab" href="#tabBuyer">Buyer</a></li>
@@ -21,4 +23,23 @@
         <div class="container">
 		</div>
     </div>
+</div>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#' target='_blank'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Widgets</span></a></li>
+         <li><a href='#'><span>Menus</span></a></li>
+         <li class='last'><a href='#'><span>Products</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Company</span></a>
+      <ul>
+         <li><a href='#'><span>About</span></a></li>
+         
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
 </div>
