@@ -1,0 +1,35 @@
+<%= if @passmatch.nil? then "nil" else @passmatch end %>
+<h1> Edit your Profile</h1>
+
+<div class="container">
+        <form class="form-signin" method="POST" action=<%= "/users/#{current_user.username}"   %>>
+        <input name="_method" type="hidden" value="patch" />
+            <br><br>
+            <input type="text" class="form-control disabled" name="user[username]" value=<%= "#{current_user.username}"   %> disabled><br>
+            <input type="text" class="form-control" name="user[realName]" placeholder="Real Name" size="20" value=<%= "#{current_user.realName}"   %> ><br>
+             <input type="text" value="" class="datepicker" name="user[dateOfBirth]" placeholder="Date of Birth" value=<%= "#{current_user.dateOfBirth}"   %> >
+
+            <script>
+              $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+                });
+        </script>
+        <br><br>
+        <input type="text" class="form-control" name="user[emailID]" placeholder="e-mail ID" value=<%= "#{current_user.emailID}"   %> ><br>
+        
+        <input type="password" class="form-control" name="user[oldpassword]" placeholder="Password"><br>
+        <input type="password" class="form-control" name="user[password]" placeholder="Password"><br>
+
+        <input type="text" class="form-control" name="user[latitude]" placeholder="Latitude" value=<%= "#{current_user.latitude}"   %> ><br>
+        <input type="text" class="form-control" name="user[longitude]" placeholder="Longitude" value=<%= "#{current_user.longitude}"   %> ><br>
+         <!-- <label>Preferred Role</label> &ensp; &ensp;<input type="radio" id="one" name="first_item" value="1" />
+          <label for="one">Buyer</label>
+              &ensp;&ensp;
+              <input type="radio" id="two" name="first_item" value="2" />  <label for="two">Seller</label>
+            -->
+           <%= token_tag nil %>
+        <p></p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Edit Profile</button>
+		  </form>
+		</div>
+    </div>

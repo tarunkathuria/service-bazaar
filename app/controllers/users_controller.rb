@@ -19,8 +19,10 @@ class UsersController < ApplicationController
     # puts "#{params[:username]} 4444444444444444"
     # @user = User.find_by(params[:user].username)
     # puts "3333333333333333333333 #{@user.username}"
-    @user = current_user
+    uri=request.original_url.split("/").last
+    @user = User.find_by_username(uri)
     @successfulSignin = true
+
   end
   
   def forgot_password
@@ -37,6 +39,39 @@ class UsersController < ApplicationController
       render 'pages/forgot_password'
   end
   
+  def edit
+    uri=request.original_url.split("/")[-2]
+    if uri!=current_user.username
+      redirect_to "/"
+    end
+
+  end
+  
+  def update
+    oldpass=edit_user_params[:oldpassword]
+    
+    
+    @passmatch=false
+    if oldpass == current_user.password
+      @passmatch=true
+      if current_user.update_attributes(edit_user_params_new)
+        #flash[:success] = "Profile updated"
+        redirect_to "/"
+      else
+        redirect_to "/users/#{current_user.username}/edit"
+      end
+    elsif oldpass==""
+        if current_user.update_attributes(edit_user_params_new_nopass)
+        #flash[:success] = "Profile updated"
+        redirect_to "/"
+        else
+        redirect_to "/users/#{current_user.username}/edit"
+        end
+    else
+      redirect_to "/users/#{current_user.username}/edit"
+    end
+    
+  end  
   private
 
   def user_params
@@ -46,6 +81,18 @@ class UsersController < ApplicationController
   
   def fp_param
       params.require(:user).permit(:username)
+  end
+  def edit_user_params
+    params.require(:user).permit(:username, :emailID, :oldpassword, :latitude, :longitude, :dateOfBirth, :realName)
+    # params.permit(:session).permit(:username, :password)
+  end
+  def edit_user_params_new
+    params.require(:user).permit(:username, :emailID, :password, :latitude, :longitude, :dateOfBirth, :realName)
+    # params.permit(:session).permit(:username, :password)
+  end
+  def edit_user_params_new_nopass
+      params.require(:user).permit(:username, :emailID, :latitude, :longitude, :dateOfBirth, :realName)
+      # params.permit(:session).permit(:username, :password)
   end
 
 end

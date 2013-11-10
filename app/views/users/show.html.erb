@@ -1,12 +1,5 @@
-<% if @successfulSignin %>
- <!-- <div class="alert alert-success alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    Welcome, <strong><%= @user.username %></strong>! -->
-    <% @successfulSignin = false %>
-  </div>
-<% end %>
-<div class="page-header">
-  <h1>Dashboard <small></small></h1>
+<!--<div class="page-header">
+  <h1>Dashboard <small><%= @user.username %></small></h1>
 </div>
 <br>
 
@@ -43,3 +36,6 @@
    <li class='last'><a href='#'><span>Contact</span></a></li>
 </ul>
 </div>
+-->
+
+Profile <%= @user.username %>
