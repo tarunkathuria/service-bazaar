@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131111183600) do
+ActiveRecord::Schema.define(version: 20131111184253) do
 
   create_table "buyers", primary_key: "username", force: true do |t|
     t.string "password",          limit: 20
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20131111183600) do
   create_table "categories", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.text     "description"
   end
 
   create_table "exchanges", id: false, force: true do |t|
