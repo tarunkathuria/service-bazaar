@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && User.authenticate(params[:session][:username], params[:session][:password])
       # sign the user in and redirect to their page
       sign_in(user)
-      redirect_to(user)
+      redirect_to "/"
       # render "pages/contact"
     else
       # create an error message and redirect to the home page

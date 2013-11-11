@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+acts_as_messageable
   self.primary_key = 'username'
 
   before_create :create_remember_token
@@ -27,7 +28,9 @@ class User < ActiveRecord::Base
   def User.encrypt(token)
     Digest::SHA1.hexdigest(token.to_s)
   end
-
+ def name
+     return :username
+end
   private
 
   def create_remember_token
