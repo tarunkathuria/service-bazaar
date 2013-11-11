@@ -55,19 +55,24 @@ class UsersController < ApplicationController
     if oldpass == current_user.password
       @passmatch=true
       if current_user.update_attributes(edit_user_params_new)
-        #flash[:success] = "Profile updated"
-        redirect_to "/"
-      else
+        flash[:success] = "Profile updated"
         redirect_to "/users/#{current_user.username}/edit"
+      else
+        puts current_user.errors.full_messages
+        puts "$$$$$$$$$$$$$$$$$"
+        render 'edit'
+        #redirect_to "/users/#{current_user.username}/edit"
       end
     elsif oldpass==""
         if current_user.update_attributes(edit_user_params_new_nopass)
-        #flash[:success] = "Profile updated"
-        redirect_to "/"
-        else
+        flash[:success] = "Profile updated"
         redirect_to "/users/#{current_user.username}/edit"
+        else
+        render 'edit'
+        #redirect_to "/users/#{current_user.username}/edit"
         end
     else
+    flash[:danger]="Old password incorrect!"
       redirect_to "/users/#{current_user.username}/edit"
     end
     

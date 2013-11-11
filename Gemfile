@@ -62,3 +62,7 @@ group :production do
 end
 
 gem 'simple_form'
+
+#msgs
+
+gem 'mailboxer', git: 'https://github.com/ging/mailboxer.git'
