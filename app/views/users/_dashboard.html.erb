@@ -1,0 +1,46 @@
+<div class="page-header">
+    <h1>Dashboard <small><%= @user.username %></small></h1>
+  </div>
+<br>
+
+<ul class="nav nav-tabs " data-tabs="tabs">
+  <li class="active"><a data-toggle="tab" href="#tabBuyer">Buyer</a></li>
+  <li><a data-toggle="tab" href="#tabVendor">Vendor</a></li>
+</ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="tabBuyer">
+      <div class="container">
+      </div>
+    </div>
+    <div class="tab-pane" id="tabVendor">
+        <div class="container">
+    </div>
+    </div>
+</div>
+<div id='cssmenu' height="1px">
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#' target='_blank'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Widgets</span></a></li>
+         <li><a href='#'><span>Menus</span></a></li>
+         <li class='last'><a href='#'><span>Products</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Company</span></a>
+      <ul>
+         <li><a href='#'><span>About</span></a></li>
+         
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+
+<br><br>
+
+<form action="/services/new" method="post">
+  <button type="submit" class="btn btn-lg btn-primary">Create a Service</button>
+  <%= token_tag nil %>
+</form>

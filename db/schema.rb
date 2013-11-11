@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131111085301) do
-
-  create_table "appointments", id: false, force: true do |t|
-    t.string  "buyerName",   limit: 30, default: "", null: false
-    t.integer "listingID",              default: 0,  null: false
-    t.integer "serviceID",              default: 0,  null: false
-    t.float   "price"
-    t.boolean "isConfirmed"
-  end
+ActiveRecord::Schema.define(version: 20131111114349) do
 
   create_table "buyers", primary_key: "username", force: true do |t|
     t.string "password",          limit: 20
@@ -40,11 +32,6 @@ ActiveRecord::Schema.define(version: 20131111085301) do
     t.float  "rating"
   end
 
-  create_table "categories", primary_key: "categoryID", force: true do |t|
-    t.string "Name",        limit: 40
-    t.string "Description", limit: 500
-  end
-
   create_table "exchanges", id: false, force: true do |t|
     t.string  "senderName",   limit: 30, default: "", null: false
     t.string  "receiverName", limit: 30, default: "", null: false
@@ -57,30 +44,9 @@ ActiveRecord::Schema.define(version: 20131111085301) do
     t.integer "serviceID",             default: 0,  null: false
   end
 
-  create_table "feedbacks", primary_key: "feedbackID", force: true do |t|
-    t.float  "rating"
-    t.string "review", limit: 4000
-  end
-
   create_table "liesins", id: false, force: true do |t|
     t.integer "categoryID", default: 0, null: false
     t.integer "serviceID",  default: 0, null: false
-  end
-
-  create_table "listings", id: false, force: true do |t|
-    t.integer "serviceID",                        default: 0, null: false
-    t.integer "listingID",                        default: 0, null: false
-    t.float   "minPrice"
-    t.float   "maxPrice"
-    t.time    "startingTime"
-    t.time    "endingTime"
-    t.date    "startDate"
-    t.date    "endDate"
-    t.float   "latitudeLocation"
-    t.float   "longitudeLocation"
-    t.string  "listingDescription",   limit: 100
-    t.string  "availability",         limit: 20
-    t.float   "availabilityDistance"
   end
 
   create_table "mailboxer_conversations", force: true do |t|
@@ -126,26 +92,14 @@ ActiveRecord::Schema.define(version: 20131111085301) do
   create_table "messages", force: true do |t|
   end
 
-  create_table "offeredservices", primary_key: "serviceID", force: true do |t|
-  end
-
   create_table "offers", id: false, force: true do |t|
     t.string  "vendorName", limit: 30, default: "", null: false
     t.integer "serviceID",             default: 0,  null: false
   end
 
-  create_table "requestedservices", primary_key: "serviceID", force: true do |t|
-  end
-
-  create_table "requests", id: false, force: true do |t|
-    t.string  "buyerName", limit: 30, default: "", null: false
-    t.integer "serviceID",            default: 0,  null: false
-  end
-
-  create_table "services", primary_key: "serviceID", force: true do |t|
-    t.string  "title",       limit: 100
-    t.string  "description", limit: 500
-    t.integer "visibility"
+  create_table "services", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", id: false, force: true do |t|

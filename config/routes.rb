@@ -6,6 +6,9 @@ ServiceBazaar::Application.routes.draw do
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
+  resources :services
+
+  match "/services/new", to: "services#new", via: [:post, :get]
 
   match '/signin', :to => 'sessions#new', :via => 'get'
   match '/signout', :to => 'sessions#destroy', :via => 'delete'
