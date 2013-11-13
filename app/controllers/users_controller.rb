@@ -100,4 +100,16 @@ class UsersController < ApplicationController
       # params.permit(:session).permit(:username, :password)
   end
 
+  def messages_show
+    @ur=User.all
+    @user=current_user
+
+    #@usermsgs=current_user.mailbox.inbox.map{|c| c.messages.to_a}.flatten
+    #@userinbox=@usermsgs.reject{|m| m.sender == current_user}
+    #@useroutbox=@usermsgs.reject{|m| m.sender != current_user}
+    #@userinboxjson=@userinbox.to_json
+    #puts "!!!!!!!!!!!!!!!!!!"
+    #puts @userinboxjson
+    #@useroutboxjson=@useroutbox.to_json
+  end
 end
