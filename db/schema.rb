@@ -13,6 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20131111184253) do
 
+  create_table "appointments", id: false, force: true do |t|
+    t.string  "buyerName",   limit: 30, default: "", null: false
+    t.integer "listingID",              default: 0,  null: false
+    t.integer "serviceID",              default: 0,  null: false
+    t.float   "price"
+    t.boolean "isConfirmed"
+  end
+
   create_table "buyers", primary_key: "username", force: true do |t|
     t.string "password",          limit: 20
     t.float  "latitudeLocation"
@@ -51,9 +59,30 @@ ActiveRecord::Schema.define(version: 20131111184253) do
     t.integer "serviceID",             default: 0,  null: false
   end
 
+  create_table "feedbacks", primary_key: "feedbackID", force: true do |t|
+    t.float  "rating"
+    t.string "review", limit: 4000
+  end
+
   create_table "liesins", id: false, force: true do |t|
     t.integer "categoryID", default: 0, null: false
     t.integer "serviceID",  default: 0, null: false
+  end
+
+  create_table "listings", id: false, force: true do |t|
+    t.integer "serviceID",                        default: 0, null: false
+    t.integer "listingID",                        default: 0, null: false
+    t.float   "minPrice"
+    t.float   "maxPrice"
+    t.time    "startingTime"
+    t.time    "endingTime"
+    t.date    "startDate"
+    t.date    "endDate"
+    t.float   "latitudeLocation"
+    t.float   "longitudeLocation"
+    t.string  "listingDescription",   limit: 100
+    t.string  "availability",         limit: 20
+    t.float   "availabilityDistance"
   end
 
   create_table "mailboxer_conversations", force: true do |t|
@@ -99,9 +128,20 @@ ActiveRecord::Schema.define(version: 20131111184253) do
   create_table "messages", force: true do |t|
   end
 
+  create_table "offeredservices", primary_key: "serviceID", force: true do |t|
+  end
+
   create_table "offers", id: false, force: true do |t|
     t.string  "vendorName", limit: 30, default: "", null: false
     t.integer "serviceID",             default: 0,  null: false
+  end
+
+  create_table "requestedservices", primary_key: "serviceID", force: true do |t|
+  end
+
+  create_table "requests", id: false, force: true do |t|
+    t.string  "buyerName", limit: 30, default: "", null: false
+    t.integer "serviceID",            default: 0,  null: false
   end
 
   create_table "services", force: true do |t|
@@ -112,7 +152,7 @@ ActiveRecord::Schema.define(version: 20131111184253) do
     t.integer  "visibility"
   end
 
-  create_table "users", id: false, force: true do |t|
+  create_table "users", force: true do |t|
     t.string   "username",       null: false
     t.float    "latitude",       null: false
     t.float    "longitude",      null: false

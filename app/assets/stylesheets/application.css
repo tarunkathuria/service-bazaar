@@ -11,6 +11,9 @@
  *= require_self
  *= require twitter/bootstrap
  *= require bootstrap-datepicker
+ *= jquery.ui.core
+ *= jquery.ui.theme
+ *= require dataTables/src/demo_table_jui
  *= require_tree .
  */
 

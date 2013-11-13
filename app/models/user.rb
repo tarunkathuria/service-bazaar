@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 acts_as_messageable
-  self.primary_key = 'username'
+  
 
   before_create :create_remember_token
 

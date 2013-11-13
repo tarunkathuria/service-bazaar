@@ -37,6 +37,93 @@
    <li class='last'><a href='#'><span>Contact</span></a></li>
 </ul>
 </div>
+<script type="text/javascript" charset="utf-8">
+			/* Formating function for row details */
+			function fnFormatDetails ( oTable, nTr )
+			{
+				var aData = oTable.fnGetData( nTr );
+				var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
+				sOut += '<tr><td>Rendering engine:</td><td>'+aData[1]+' '+aData[4]+'</td></tr>';
+				sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
+				sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
+				sOut += '</table>';
+				
+				return sOut;
+			}
+			
+			$(document).ready(function() {
+				/*
+				 * Insert a 'details' column to the table
+				 */
+				var nCloneTh = document.createElement( 'th' );
+				var nCloneTd = document.createElement( 'td' );
+				nCloneTd.innerHTML = '<img src="/details_open.png">';
+				nCloneTd.className = "center";
+				
+				$('#example thead tr').each( function () {
+					this.insertBefore( nCloneTh, this.childNodes[0] );
+				} );
+				
+				$('#example tbody tr').each( function () {
+					this.insertBefore(  nCloneTd.cloneNode( true ), this.childNodes[0] );
+				} );
+				
+				/*
+				 * Initialse DataTables, with no sorting on the 'details' column
+				 */
+				var oTable = $('#example').dataTable( {
+					"aoColumnDefs": [
+						{ "bSortable": false, "aTargets": [ 0 ] }
+					],
+					"aaSorting": [[1, 'asc']],
+					sPaginationType: "full_numbers",
+    				bJQueryUI: true
+				});
+				
+				/* Add event listener for opening and closing details
+				 * Note that the indicator for showing which row is open is not controlled by DataTables,
+				 * rather it is done here
+				 */
+				$('#example tbody td img').live('click', function () {
+					var nTr = $(this).parents('tr')[0];
+					if ( oTable.fnIsOpen(nTr) )
+					{
+						/* This row is already open - close it */
+						this.src = "/details_open.png";
+						oTable.fnClose( nTr );
+					}
+					else
+					{
+						/* Open this row */
+						this.src = "/details_close.png";
+						oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
+					}
+				} );
+			} );
+		</script>
+	
+<table class="display" id="example">
+	<thead>
+		<tr>
+			<th> Username </th>
+			<th> Password </th>
+			<th> Real Name </th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |u| %>
+			<tr>
+				<td><a href=<%= "/users/#{u.username}"%>><font color="blue"> <%= u.username %> </font> </a></td>
+				<td><font color="red"> <%= u.password %> </font></td>
+				<td><font color="red"> <%= u.realName %> </font></td>
+			</tr>
+		<%end%>
+	
+	</tbody>
+
+</table>
+
+
 
 <br><br>
 
@@ -44,3 +131,61 @@
   <button type="submit" class="btn btn-lg btn-primary">Create a Service</button>
   <%= token_tag nil %>
 </form>
+
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="users">
+	<thead>
+		<tr>
+			<th>Rendering engine</th>
+			<th>Browser</th>
+			<th>Platform(s)</th>
+			<th>Engine version</th>
+			<th>CSS grade</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="gradeX">
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 4.0</td>
+			<td>Win 95+</td>
+			<td class="center">4</td>
+			<td class="center">X</td>
+		</tr>
+		<tr class="gradeC">
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 5.0</td>
+			<td>Win 95+</td>
+			<td class="center">5</td>
+			<td class="center">C</td>
+		</tr>
+		</tbody></table>
+
+<script type="text/javascript" charset="utf-8">
+			/* Data set - can contain whatever information you want */
+			var aDataSet = <%=raw @ujson %>;
+			var anOpen = [];
+
+			$(document).ready(function() {
+				$('#dynamic').html( '<table cellpadding="0" cellspacing="0" border="0" class="display"  id="example1"></table>' );
+				var oData = $('#example1').dataTable( {
+					 "bProcessing": true,
+					"bJQueryUI": "false",
+					"aaData": aDataSet,
+					"aoColumns": [
+						{
+							"mDataProp":null,
+							"sClass":"control center",
+							"sDefaultContent": '<img src="/details_open.png">'
+						},
+						{"mDataProp": "username", "sTitle":"username"},
+						{"mDataProp": "password", "sTitle":"password"}
+						
+					]
+				} );	
+			} );
+
+		
+
+		</script>
+<div id="dynamic"></div>

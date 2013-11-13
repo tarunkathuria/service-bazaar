@@ -1,6 +1,6 @@
 class CreateUsers < ActiveRecord::Migration
     def self.up
-    create_table :users, :id => false do |t|
+    create_table :users do |t|
     t.string :username, :null => false
     t.float :latitude, :null =>false
     t.float :longitude, :null => false
