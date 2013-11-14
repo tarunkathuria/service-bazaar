@@ -7,6 +7,7 @@ ServiceBazaar::Application.routes.draw do
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
   resources :services
+  resources :listings
 
   match "/services/new", to: "services#new", via: [:post, :get]
 
@@ -24,6 +25,9 @@ ServiceBazaar::Application.routes.draw do
   match "/forgot_password", to: "pages#forgot_password", via: [:get]
   match "/forgotPassword", to: "users#forgot_password", via: [:post]
   match "/messages", to: "users#messages_show", via: [:get]
+  match "/new_message", to: "users#new_message", via: [:post,:get]
+  match "/transit", to: "users#transit", via: [:post,:get]
+  match "/users/:id/offered", to: "users#offered", via: [:get]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

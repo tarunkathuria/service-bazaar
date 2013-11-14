@@ -1,0 +1,39 @@
+<h1>Create a New Listing</h1>
+
+<form action="/listings" method="post"> <!-- listings#create -->
+	<label for="service-title">Title</label>
+	<input type="text" class="form-control" id="service-title" length=""	name="service[title]" placeholder="Title" maxlength="100"><br>
+
+	<label for="service-category">Category</label>
+	<select name="service[category]" id="service-category">
+		<% all_category_names.each do |cat_name| %>
+			<option><%= cat_name %></option>
+		<% end %>
+	</select><br>
+
+	<label for="service-describe">Description</label>
+	<textarea type="text" class="form-control" id="service-describe" name="service[description]" placeholder="Describe your service" rows="5"></textarea><br>
+
+	<table cellpadding="10" id="service-visi">
+		<tr>
+			<td><strong>Visibility</strong></td>
+			<td>
+				<label for="public-radio">
+					<input type="radio" name="service[visibility]" value="0" id="public-radio">Public
+				</label><br>
+				<label for="private-radio">
+					<input type="radio" name="service[visibility]" value="1" id="private-radio">Private
+				</label><br>
+				<label for="anon-radio">
+					<input type="radio" name="service[visibility]" value="2" id="anon-radio">Anonymous
+				</label><br>
+			</td>
+		</tr>
+	</table>
+	<div>
+	</div>
+
+	<%= token_tag nil %>
+
+	<button type="submit" class="btn btn-lg btn-primary">Create!</button><br>
+</form>

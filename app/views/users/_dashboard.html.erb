@@ -1,3 +1,7 @@
+ <% if flash[:service_created] %>
+    <div class="service_created"><%= flash[:service_created] %></div>
+<% end %>
+
 <div class="page-header">
     <h1>Dashboard <small><%= @user.username %></small></h1>
   </div>
@@ -8,16 +12,19 @@
   <li><a data-toggle="tab" href="#tabVendor">Vendor</a></li>
 </ul>
 
+	<!-- Buyer tab -->
   <div class="tab-content">
     <div class="tab-pane active" id="tabBuyer">
-      <div class="container">
-      </div>
+		<div class="container">
+		</div>
     </div>
-    <div class="tab-pane" id="tabVendor">
-        <div class="container">
-    </div>
-    </div>
-</div>
+	<!-- Vendor tab -->
+	    <div class="tab-pane" id="tabVendor">
+	        <div class="container">
+	        	<p>You are offering <%= pluralize(current_user.services.count, "service") %>.</p>
+		    </div>
+	    </div>
+	</div>
 <div id='cssmenu' height="1px">
 <ul>
    <li class='active'><a href='index.html'><span>Home</span></a></li>
@@ -110,7 +117,7 @@
 	<tbody>
 		<% @users.each do |u| %>
 			<tr>
-				<td><a href=<%= "/users/#{u.username}"%>><font color="blue"> <%= u.username %> </font> </a></td>
+				<td><a href=<%= "/users/#{u.id}"%>><font color="blue"> <%= u.username %> </font> </a></td>
 				<td><font color="red"> <%= u.password %> </font></td>
 				<td><font color="red"> <%= u.realName %> </font></td>
 			</tr>
@@ -185,7 +192,8 @@
 
 		</script>
 <div id="dynamic"></div>
-
+ <input name="adv1", type="radio" class="star {half:true}"/>
+ <input name="adv1", type="radio" class="star {half:true}"/>
 
 <a href="#">
       <span class="badge">42</span>

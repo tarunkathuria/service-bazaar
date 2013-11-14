@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
-acts_as_messageable
-  
+  acts_as_messageable
+
+  has_many :services  
 
   before_create :create_remember_token
 

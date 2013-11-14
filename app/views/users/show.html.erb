@@ -1,15 +1,14 @@
 <!-- This page displays the user's profile page, which contains static information like their date of birth, location etc. -->
 
-<% if @successfulSignin %>
- <!-- <div class="alert alert-success alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    Welcome, <strong><%= @user.username %></strong>! -->
-    <% @successfulSignin = false %>
+<% if @successfulSignin and current_user.username == @user.username  %>
+    Welcome, <strong><%= @user.username %></strong>
+<% @successfulSignin = false %>
   </div>
 
 <% end %>
 <div class="page-header">
-  <h1>Profile Page</h1>
+	<h1><%= @user.username %></h1>
+	<%= link_to "Services offered", "/users/#{@user.id}/offered" %>
 </div>
 
 <br>

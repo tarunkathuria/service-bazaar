@@ -1,0 +1,14 @@
+<% user_id = request.original_url.split('/')[-2] %>
+<% @user = User.find(user_id) %>
+<h1>Services offered by <%= @user.username %></h1>
+
+<% if @user.services.count.zero? %>
+	<p><strong><%= @user.username %></strong> has not offered any services yet</p>
+<% else %>
+	<ul>
+		<p><strong><%= @user.username %></strong> offers the following services</p>
+		<% @user.services.each do |s| %>
+			<li><%= link_to s.title, s %></li>
+		<% end %>
+	</ul>
+<% end %>

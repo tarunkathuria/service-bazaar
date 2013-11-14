@@ -11,79 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131111184253) do
-
-  create_table "appointments", id: false, force: true do |t|
-    t.string  "buyerName",   limit: 30, default: "", null: false
-    t.integer "listingID",              default: 0,  null: false
-    t.integer "serviceID",              default: 0,  null: false
-    t.float   "price"
-    t.boolean "isConfirmed"
-  end
-
-  create_table "buyers", primary_key: "username", force: true do |t|
-    t.string "password",          limit: 20
-    t.float  "latitudeLocation"
-    t.float  "longitudeLocation"
-    t.string "realName",          limit: 60
-    t.date   "dateOfBirth"
-    t.string "emailID",           limit: 40
-  end
-
-  create_table "buyervendors", primary_key: "username", force: true do |t|
-    t.string "password",          limit: 20
-    t.float  "latitudeLocation"
-    t.float  "longitudeLocation"
-    t.string "realName",          limit: 60
-    t.date   "dateOfBirth"
-    t.string "emailID",           limit: 40
-    t.float  "rating"
-  end
+ActiveRecord::Schema.define(version: 20131114002614) do
 
   create_table "categories", force: true do |t|
+    t.string "title"
+    t.text   "description"
+  end
+
+  create_table "liesins", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
+  end
+
+  create_table "listings", force: true do |t|
+    t.datetime "startingTime"
+    t.datetime "endingTime"
+    t.float    "minPrice"
+    t.float    "maxPrice"
+    t.date     "startDate"
+    t.date     "endDate"
+    t.float    "latitude"
+    t.float    "longitude"
     t.text     "description"
+    t.string   "availability"
+    t.integer  "service_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "exchanges", id: false, force: true do |t|
-    t.string  "senderName",   limit: 30, default: "", null: false
-    t.string  "receiverName", limit: 30, default: "", null: false
-    t.integer "messageID",               default: 0,  null: false
-  end
-
-  create_table "feedbackfors", id: false, force: true do |t|
-    t.integer "feedbackID"
-    t.string  "buyerName",  limit: 30, default: "", null: false
-    t.integer "serviceID",             default: 0,  null: false
-  end
-
-  create_table "feedbacks", primary_key: "feedbackID", force: true do |t|
-    t.float  "rating"
-    t.string "review", limit: 4000
-  end
-
-  create_table "liesins", id: false, force: true do |t|
-    t.integer "categoryID", default: 0, null: false
-    t.integer "serviceID",  default: 0, null: false
-  end
-
-  create_table "listings", id: false, force: true do |t|
-    t.integer "serviceID",                        default: 0, null: false
-    t.integer "listingID",                        default: 0, null: false
-    t.float   "minPrice"
-    t.float   "maxPrice"
-    t.time    "startingTime"
-    t.time    "endingTime"
-    t.date    "startDate"
-    t.date    "endDate"
-    t.float   "latitudeLocation"
-    t.float   "longitudeLocation"
-    t.string  "listingDescription",   limit: 100
-    t.string  "availability",         limit: 20
-    t.float   "availabilityDistance"
-  end
+  add_index "listings", ["service_id"], name: "index_listings_on_service_id", using: :btree
 
   create_table "mailboxer_conversations", force: true do |t|
     t.string   "subject",    default: ""
@@ -125,31 +81,11 @@ ActiveRecord::Schema.define(version: 20131111184253) do
 
   add_index "mailboxer_receipts", ["notification_id"], name: "index_mailboxer_receipts_on_notification_id", using: :btree
 
-  create_table "messages", force: true do |t|
-  end
-
-  create_table "offeredservices", primary_key: "serviceID", force: true do |t|
-  end
-
-  create_table "offers", id: false, force: true do |t|
-    t.string  "vendorName", limit: 30, default: "", null: false
-    t.integer "serviceID",             default: 0,  null: false
-  end
-
-  create_table "requestedservices", primary_key: "serviceID", force: true do |t|
-  end
-
-  create_table "requests", id: false, force: true do |t|
-    t.string  "buyerName", limit: 30, default: "", null: false
-    t.integer "serviceID",            default: 0,  null: false
-  end
-
   create_table "services", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "title"
-    t.text     "description"
-    t.integer  "visibility"
+    t.string  "title"
+    t.text    "description"
+    t.integer "visibility"
+    t.integer "user_id"
   end
 
   create_table "users", force: true do |t|
@@ -159,25 +95,15 @@ ActiveRecord::Schema.define(version: 20131111184253) do
     t.string   "realName"
     t.date     "dateOfBirth"
     t.string   "emailID",        null: false
+    t.string   "remember_token"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password"
-    t.string   "remember_token"
   end
 
   add_index "users", ["emailID"], name: "index_users_on_emailID", unique: true, using: :btree
   add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
-
-  create_table "vendors", primary_key: "username", force: true do |t|
-    t.string "password",          limit: 20
-    t.float  "latitudeLocation"
-    t.float  "longitudeLocation"
-    t.string "realName",          limit: 60
-    t.date   "dateOfBirth"
-    t.string "emailID",           limit: 40
-    t.float  "rating"
-  end
 
   add_foreign_key "mailboxer_notifications", "mailboxer_conversations", name: "notifications_on_conversation_id", column: "conversation_id"
 

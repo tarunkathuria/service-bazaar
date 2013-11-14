@@ -10,30 +10,27 @@ class UsersController < ApplicationController
       @title="Sign up"
       @errorSignup = true
       render 'pages/home'
-      @hm = user_params
     end
   end
  
   def show
-    # @user = User.find(user_params)
-    # puts "#{params[:username]} 4444444444444444"
-    # @user = User.find_by(params[:user].username)
-    # puts "3333333333333333333333 #{@user.username}"
     uri=request.original_url.split("/").last
-    @user = User.find_by_username(uri)
+    @user = User.find(uri)
     @successfulSignin = true
+  end
 
+  def services
+    uri=request.original_url.split("/")[-2]
+    @user = User.find(uri)
   end
   
   def forgot_password
       @user=User.find_by(fp_param)
-      # puts "Forgot Pass user is!!!!!!!!!!!!!!!!!! #{@user.username} #{@user.password}"
       if @user.nil?
           @nilUser=true
           
       else
         @nilUser=false
-        puts " !!!!!!!!!!!!! #{@user.username}"
         UserMailer.forgot_password(@user).deliver
       end
       render 'pages/forgot_password'
@@ -41,7 +38,7 @@ class UsersController < ApplicationController
   
   def edit
     uri=request.original_url.split("/")[-2]
-    if uri!=current_user.username
+    if uri != current_user.id.to_s
       redirect_to "/"
     end
 
@@ -56,27 +53,60 @@ class UsersController < ApplicationController
       @passmatch=true
       if current_user.update_attributes(edit_user_params_new)
         flash[:success] = "Profile updated"
-        redirect_to "/users/#{current_user.username}/edit"
+        redirect_to "/users/#{current_user.id}/edit"
       else
         puts current_user.errors.full_messages
-        puts "$$$$$$$$$$$$$$$$$"
         render 'edit'
-        #redirect_to "/users/#{current_user.username}/edit"
       end
     elsif oldpass==""
         if current_user.update_attributes(edit_user_params_new_nopass)
         flash[:success] = "Profile updated"
-        redirect_to "/users/#{current_user.username}/edit"
+        redirect_to "/users/#{current_user.id}/edit"
         else
         render 'edit'
         #redirect_to "/users/#{current_user.username}/edit"
         end
     else
     flash[:danger]="Old password incorrect!"
-      redirect_to "/users/#{current_user.username}/edit"
+      redirect_to "/users/#{current_user.id}/edit"
     end
     
   end  
+
+  def messages_show
+    @ur=User.all
+    @user=current_user
+  end
+  def new_message
+   @rec=params[:xyz]
+  end  
+  def transit
+    rec=User.find_by_username(new_msg_params[:recipient])
+    bod=new_msg_params[:body]
+    sub=new_msg_params[:subject]
+    puts rec.nil?
+    puts bod.nil?
+    puts sub.nil?
+    if rec.nil? || bod.nil? || sub.nil?
+      @errs=[]
+      if rec.nil?
+        @errs << "Recipient can't be empty or is incorrect"
+      end
+      if bod.nil?
+        @errs << "Body can't be empty"
+      end
+      if sub.nil?
+        @errs << "Subject can't be empty"
+      end
+      flash[:danger]="Message couldn't be sent <ul>"+@errs.map{|e| "<li>"+e+"</li>"}.inject{|u,v| u+=v}+"</ul>"
+      redirect_to '/new_message'
+    else
+      flash[:success]="Message sent successfully"
+      current_user.send_message(rec,bod,sub)
+      redirect_to '/new_message'
+    end
+  end
+    
   private
 
   def user_params
@@ -100,16 +130,9 @@ class UsersController < ApplicationController
       # params.permit(:session).permit(:username, :password)
   end
 
-  def messages_show
-    @ur=User.all
-    @user=current_user
-
-    #@usermsgs=current_user.mailbox.inbox.map{|c| c.messages.to_a}.flatten
-    #@userinbox=@usermsgs.reject{|m| m.sender == current_user}
-    #@useroutbox=@usermsgs.reject{|m| m.sender != current_user}
-    #@userinboxjson=@userinbox.to_json
-    #puts "!!!!!!!!!!!!!!!!!!"
-    #puts @userinboxjson
-    #@useroutboxjson=@useroutbox.to_json
+  def new_msg_params
+    params.require(:msg).permit(:body,:subject,:recipient)
   end
+
+  
 end

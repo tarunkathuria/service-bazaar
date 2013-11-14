@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<meta charset="utf-8">
 		<title>ServiceBazaar</title>
 		<%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
 		<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 		<%= csrf_meta_tags %>
+		 <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe74sNpBGaexJE3_trSv2NcA21Brj_d10&sensor=true"></script>
 	</head>
 	<body>
 		<!-- add if condition to display header only if logged in -->
